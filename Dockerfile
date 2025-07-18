@@ -2,6 +2,8 @@ FROM docker.io/maven:3.9.6-eclipse-temurin-21 AS build
 
 WORKDIR /app
 COPY pom.xml .
+COPY server.xml /usr/local/tomcat/conf/server.xml
+
 COPY src ./src
 
 # Build the WAR file
