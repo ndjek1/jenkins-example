@@ -17,5 +17,13 @@
   </dependencies>
   <build>
     <finalName>first_webapp</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.4.0</version> <!-- or latest -->
+      </plugin>
+
+    </plugins>
   </build>
 </project>
